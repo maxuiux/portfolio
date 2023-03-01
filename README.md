@@ -1,9 +1,4 @@
 # Portfolio Maxuiux
-
-link: https://maxuiux.github.io/portfolio/
-
-```xml
-<!--
                ,,
           ,@╣▒▒▒▒▒▒╣╗,
          ╢▒▒▒▒```"╢▒▒▒@
@@ -12,5 +7,5 @@ link: https://maxuiux.github.io/portfolio/
         ║▒▒▒▒▒   ]Ñ╖      ╓╢`   ╙▒   `╢╖,╥Ñ`  ]▒     ║[   ,    ▒     ]▒   ╙╣╖╓╣╜
          ╙▒▒▒▒   ]▒▒╢╖    ║[     ▒    ,╢╣╣    ]▒     ║[   ▒    ▒     ]▒    ╓╢╣╖
            ╙╝▒   ]▒╝╜      ╙ß╥╓╗Ñ▒   ╙╜   ╙`   ╙╣╗╖╥╣╜    ▒     ╢N╖╥@╜    ╨╜  `╝
--->
-```
+           
+link: https://maxuiux.github.io/portfolio/
