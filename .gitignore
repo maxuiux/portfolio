@@ -1,0 +1,9 @@
+node_modules
+package.json
+package-lock.json
+yarn.lock
+process.json
+src
+tasks
+folders.txt
+gulpfile.js
