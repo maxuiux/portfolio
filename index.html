@@ -18,7 +18,7 @@
 	<meta name="description"
 				content="Game Developer, Web Developer">
 	<meta name="keywords"
-				content="">
+				content="maxuiux, web developer, game developer, developer, development, gulp, html, css, scss, sass, wordpress, animation, photoshop, figma">
 	<link rel="shortcut icon"
 				href="img/favicons/favicon.svg"
 				type="image/svg+xml">
@@ -27,6 +27,9 @@
 				type="image/webp">
 	<link rel="shortcut icon"
 				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.ico"
 				type="image/x-icon">
 	<link rel="stylesheet"
 				href="css/libs.min.css">
@@ -37,15 +40,56 @@
 
 
 <body>
-	<header class="header"></header>
-
-	<main class="main">
-	Hello World!
-	</main>
+	<header class="header">
+    <div class="header__inner">
+        <a class="logo__link" href="#" title="logotype - 2023 © copyright maxuiux">
+            <svg class="logo" alt="Logo Maxuiux">
+                <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+        </a>
+        <button class="header-button">
+            Offer a job
+        </button>
+    </div>
+</header>
+	
+	<div class="main">
+    <div class="photo">
+        <picture>
+            <source type="image/webp" srcset="img/photo.webp">
+            <img src="img/photo.png" alt="Photo Maxuiux">
+        </picture>
+    </div>
+    
+    <div class="social">
+        <div class="social__inner">
+            <div class="social-anim-line">
+                <div class="social-anim-line__dotted"></div>
+            </div>
+            <div class="social-icons">
+                <a class="social-icon" href="#">
+                    <svg class="social-icon__behance">
+                        <use xlink:href="img/sprite.svg#behance"></use>
+                    </svg>
+                </a>
+                <a class="social-icon" href="#">
+                    <svg class="social-icon__codepen">
+                        <use xlink:href="img/sprite.svg#codepen"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="social-anim-line">
+                <div class="social-anim-line__dotted"></div>
+            </div>
+        </div>
+    </div>
+</div>
+	
 	<footer class="footer"></footer>
 
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+
 
 </body>
 
