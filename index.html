@@ -49,17 +49,20 @@
 
 <body class="overflow">
 	<header class="header">
-    <div class="header__inner">
-        <a class="logo__link" href="https://maxuiux.github.io/portfolio" title="logotype - 2023 © copyright maxuiux">
-            <svg class="logo" alt="Logo Maxuiux">
-                <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
-        </a>
-        <button class="header-button">
-            Offer a job
-        </button>
+    <div class="container-2">
+        <div class="header__inner">
+            <a class="logo__link" href="/" title="logotype - 2023 © copyright maxuiux">
+                <svg class="logo" alt="Logo Maxuiux">
+                    <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+            </a>
+            <div class="rubberfield"></div>
+            <button class="header-button">
+                Offer a job
+            </button>
+        </div>
     </div>
-    
+
     <div class="social">
         <div class="social__inner">
             <div class="social-anim-line">
@@ -79,7 +82,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="pattern-anim">
         <div class="pattern-anim__inner">
             <div class="pattern-anim__icon pattern-anim__icon--x pattern-anim__icon--pos-1">
@@ -169,28 +172,38 @@
 	<main class="main">
 
     <div class="main-info">
-        <h1 class="max">
-            Max
-        </h1>
-        <div class="photo">
-            <div class="photo__inner">
-                <picture>
-                    <source type="image/webp" srcset="img/photo.webp">
+        <div class="main-info__inner">
+            <h1 class="max">
+                Max
+            </h1>
+            <div class="photo">
+                <div class="photo__inner">
                     <img src="img/photo.png" alt="Photo Maxuiux">
-                </picture>
-                <h2 class="dev">
-                    Developer
-                </h2>
+                    <h2 class="dev">
+                        Developer
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-info">
+            <div class="container-2">
+                <div class="mobile-info__inner">
+                    <div class="mobile-info__title">
+                        Max
+                    </div>
+                    <div class="mobile-info__subtitle">
+                        Developer
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="card__items">
-        <a href="https://maxuiux.github.io/portfolio/technical-designer" class="card__item">
-            <picture class="card__img">
-                <source type="image/webp" srcset="img/card-preview-01.webp">
+        <a href="../technical-designer.html" class="card__item">
+            <div class="card__img">
                 <img src="img/card-preview-01.png">
-            </picture>
+            </div>
             <div class="card__inner">
                 <div class="card__title">
                     Technical Design
@@ -200,11 +213,10 @@
                 </div>
             </div>
         </a>
-        <a href="#" class="card__item">
-            <picture class="card__img">
-                <source type="image/webp" srcset="img/card-preview-02.webp">
+        <a href="../web-developer.html" class="card__item">
+            <div class="card__img">
                 <img src="img/card-preview-02.png">
-            </picture>
+            </div>
             <div class="card__inner">
                 <div class="card__title">
                     Web Developer
