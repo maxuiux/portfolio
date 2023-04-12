@@ -42,7 +42,7 @@
 	<link rel="stylesheet"
 				href="css/libs.min.css">
 	<link rel="stylesheet"
-				href="css/style.min.css">
+				href="css/style.min.css?ver=0.0.1">
 	<title>Maxuiux Portfolio</title>
 </head>
 
@@ -178,7 +178,10 @@
             </h1>
             <div class="photo">
                 <div class="photo__inner">
-                    <img src="img/photo.png" alt="Photo Maxuiux">
+                    <picture>
+                        <source type="image/webp" srcset="img/photo.webp">
+                        <img class="lozad" data-src="img/photo.png" alt="Photo Maxuiux">
+                    </picture>
                     <h2 class="dev">
                         Developer
                     </h2>
@@ -202,7 +205,10 @@
     <div class="card__items">
         <a href="/portfolio/technical-designer" class="card__item">
             <div class="card__img">
-                <img src="img/card-preview-01.png">
+                <picture>
+                    <source type="image/webp" srcset="img/card-preview-01.webp">
+                    <img class="lozad" data-src="img/card-preview-01.png" alt="Technical Design">
+                </picture>
             </div>
             <div class="card__inner">
                 <div class="card__title">
@@ -215,7 +221,10 @@
         </a>
         <a href="/portfolio/web-developer" class="card__item">
             <div class="card__img">
-                <img src="img/card-preview-02.png">
+                <picture>
+                    <source type="image/webp" srcset="img/card-preview-02.webp">
+                    <img class="lozad" data-src="img/card-preview-02.png" alt="Web Developer">
+                </picture>
             </div>
             <div class="card__inner">
                 <div class="card__title">
@@ -267,8 +276,8 @@
 	<footer class="footer"></footer>
 
 	<script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 <script src="js/main.min.js"></script>
-
 
 </body>
 
