@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.6",
+    "@r3-dev/brand": "^1.2.0",
     "sass": "^1.56.0"
   }
 }
