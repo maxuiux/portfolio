@@ -4,3 +4,17 @@ r3-badge {
   left: 1rem;
   z-index: 999999;
 }
+
+@media (prefers-color-scheme: dark) {
+  r3-badge {
+    --bg-badge: #fff;
+    --text-badge: #000;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  r3-badge {
+    --bg-badge: #fff;
+    --text-badge: #000;
+  }
+}
