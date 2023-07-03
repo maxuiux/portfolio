@@ -1,0 +1,65 @@
+/* -color */
+
+$white: #fff;
+$white-gray: #D9D9D9;
+$gray: #EFEFEF;
+$gray-2: #f7f7f7;
+
+$black: #000;
+$black-gray: #2c2c2c;
+$black-gray-2: #4f4f4f;
+$black-gray-3: #7a7a7a;
+$black-green: #113D18;
+
+$main-color: #66DB79;
+$main-color-2: #84DB66;
+
+/* -color */
+
+/* -box-shadow */
+
+$box-shadow-1: 0px 0px 80px 2px rgba($black, 0.38);
+$box-shadow-2: 0 0 6px 2px rgba($black, 0.38);
+$box-shadow-3: 0px 0px 8px rgba($black, 0.25);
+$box-shadow-4: 0px 4px 18.62px 0.38px rgb($black, 0.16);
+$box-shadow-5: 0 10px 20px rgba($black, 0.19), 0 6px 6px rgba($black, 0.23);
+$box-shadow-6: 0 1px 3px rgba($black, 0.12), 0 1px 2px rgba($black, 0.24);
+$box-shadow-7: 0 3px 6px rgba($black, 0.16), 0 3px 6px rgba($black, 0.23);
+
+/* #box-shadow */
+
+/* -border radius */
+
+$border-radius-12: 12px;
+$border-radius-16: 16px;
+$border-radius-18: 18px;
+$border-radius-20: 20px;
+$border-radius-24: 24px;
+$border-radius-30: 30px;
+$border-radius-34: 34px;
+$border-radius-full: 50%;
+
+/* -transition */
+
+$transition-1: 0.09s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$transition-2: 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$transition-3: 0.17s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+/* #transition */
+
+/* -z-index */
+
+$z-index-minus-1: -1;
+$z-index-0: 0;
+$z-index-1: 1;
+$z-index-2: 3;
+$z-index-3: 5;
+$z-index-4: 12;
+$z-index-5: 50;
+$z-index-6: 100;
+$z-index-7: 990;
+$z-index-8: 1048;
+
+/* #z-index */
+
+$letter-spacing-1: 1.2px;
