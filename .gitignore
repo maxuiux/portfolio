@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-**/node_modules
-**/build
-=======
 node_modules
 package.json
 package-lock.json
@@ -12,4 +8,3 @@ tasks
 folders.txt
 gulpfile.js
 sourcemaps
->>>>>>> parent of ca40b7e (update)
