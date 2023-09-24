@@ -27,7 +27,7 @@
 	<title>Maxuiux Portfolio</title>
 </head>
 
-<body id="pageContent" class="overflow">
+<body id="content" class="overflow">
 	<header class="header">
     <div class="container-2">
         <div class="header__inner">
@@ -183,7 +183,7 @@
     </div>
 
     <div class="card__items">
-        <a id="async" href="/portfolio/technical-designer" class="card__item">
+        <button class="card__item" onclick="loadPage('/portfolio/technical-designer.html')">
             <div class="card__img">
                 <picture>
                     <source type="image/webp" srcset="img/card-preview-01.webp">
@@ -198,8 +198,8 @@
                     View
                 </div>
             </div>
-        </a>
-        <a id="async" href="/portfolio/web-developer" class="card__item">
+        </button>
+        <button class="card__item" onclick="loadPage('/portfolio/web-developer.html')">
             <div class="card__img">
                 <picture>
                     <source type="image/webp" srcset="img/card-preview-02.webp">
@@ -214,7 +214,7 @@
                     View
                 </div>
             </div>
-        </a>
+        </button>
     </div>
 </main>
 	
