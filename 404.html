@@ -23,11 +23,28 @@
 	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
 	<link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.min.css?ver=0.0.8">
+
+	<!-- preload resource -->
+	<link rel="preload" href="img/photo.png" as="image">
+	<link rel="preload" href="img/card-preview-01.png" as="image">
+	<link rel="preload" href="img/card-preview-02.png" as="image">
+	<link rel="preload" href="img/photo.webp" as="image">
+	<link rel="preload" href="img/card-preview-01.webp" as="image">
+	<link rel="preload" href="img/card-preview-02.webp" as="image">
+	
+	<link rel="preload" href="img/preview-img.png" as="image">
+	<link rel="preload" href="img/preview-img-2.png" as="image">
+	<link rel="preload" href="img/preview-img.webp" as="image">
+	<link rel="preload" href="img/preview-img-2.webp" as="image">
+
+	<link rel="preload" href="css/style.min.css?ver=0.0.9" as="style">
+	<link rel="preload" href="js/libs.min.js" as="script">
+	<link rel="preload" href="js/main.min.js" as="script">
+	<!-- preload resource -->
+
+	<link rel="stylesheet" href="css/style.min.css?ver=0.0.9">
 	<title>Maxuiux Portfolio</title>
 </head>
-
-
 
 <body class="overflow">
 	<header class="header">
@@ -208,8 +225,8 @@
         </svg>
     </div>
 </button>
-	<script src="js/libs.min.js"></script>
-<script src="js/main.min.js"></script>
+	<script async src="js/libs.min.js"></script>
+<script async src="js/main.min.js"></script>
 
 </body>
 

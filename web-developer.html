@@ -23,11 +23,28 @@
 	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
 	<link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.min.css?ver=0.0.8">
+
+	<!-- preload resource -->
+	<link rel="preload" href="img/photo.png" as="image">
+	<link rel="preload" href="img/card-preview-01.png" as="image">
+	<link rel="preload" href="img/card-preview-02.png" as="image">
+	<link rel="preload" href="img/photo.webp" as="image">
+	<link rel="preload" href="img/card-preview-01.webp" as="image">
+	<link rel="preload" href="img/card-preview-02.webp" as="image">
+	
+	<link rel="preload" href="img/preview-img.png" as="image">
+	<link rel="preload" href="img/preview-img-2.png" as="image">
+	<link rel="preload" href="img/preview-img.webp" as="image">
+	<link rel="preload" href="img/preview-img-2.webp" as="image">
+
+	<link rel="preload" href="css/style.min.css?ver=0.0.9" as="style">
+	<link rel="preload" href="js/libs.min.js" as="script">
+	<link rel="preload" href="js/main.min.js" as="script">
+	<!-- preload resource -->
+
+	<link rel="stylesheet" href="css/style.min.css?ver=0.0.9">
 	<title>Maxuiux Portfolio</title>
 </head>
-
-
 
 <body class="body">
 	<header class="header">
@@ -174,6 +191,7 @@
                 <div class="blog-box__img blog-box__img--position">
                     <picture>
                         <source type="image/webp" srcset="img/preview-img-2.webp">
+                        <source type="image/png" srcset="img/preview-img-2.png">
                         <img src="img/preview-img-2.png" alt="Preview Main Img">
                     </picture>
                 </div>
@@ -189,18 +207,21 @@
                         <a class="blog-box-items__link" href="https://b1.yoursite.guru/" target="_blank">
                             <picture>
                                 <source type="image/webp" srcset="img/preview-img-item-10.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-10.jpg">
                                 <img data-src="img/preview-img-item-10.jpg" alt="preview">
                             </picture>
                         </a>
                         <a class="blog-box-items__link" href="https://t-modul.ru/" target="_blank">
                             <picture>
                                 <source type="image/webp" srcset="img/preview-img-item-9.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-9.jpg">
                                 <img data-src="img/preview-img-item-9.jpg" alt="preview">
                             </picture>
                         </a>
                         <a class="blog-box-items__link" href="https://papamedia.ru/" target="_blank">
                             <picture>
                                 <source type="image/webp" srcset="img/preview-img-item-8.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-8.jpg">
                                 <img data-src="img/preview-img-item-8.jpg" alt="preview">
                             </picture>
                         </a>
@@ -208,6 +229,7 @@
                             target="_blank">
                             <picture>
                                 <source type="image/webp" srcset="img/preview-img-item-7.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-7.jpg">
                                 <img data-src="img/preview-img-item-7.jpg" alt="preview">
                             </picture>
                         </a>
@@ -215,6 +237,7 @@
                             target="_blank">
                             <picture>
                                 <source type="image/webp" srcset="img/preview-img-item-6.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-6.jpg">
                                 <img data-src="img/preview-img-item-6.jpg" alt="preview">
                             </picture>
                         </a>
@@ -222,6 +245,7 @@
                             target="_blank">
                             <picture>
                                 <source type="image/webp" srcset="img/preview-img-item-5.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-5.jpg">
                                 <img data-src="img/preview-img-item-5.jpg" alt="preview">
                             </picture>
                         </a>
@@ -229,6 +253,7 @@
                             target="_blank">
                             <picture>
                                 <source type="image/webp" srcset="img/preview-img-item-4.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-4.jpg">
                                 <img data-src="img/preview-img-item-4.jpg" alt="preview">
                             </picture>
                         </a>
@@ -236,6 +261,7 @@
                             target="_blank">
                             <picture>
                                 <source type="image/webp" srcset="img/preview-img-item-3.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-3.jpg">
                                 <img data-src="img/preview-img-item-3.jpg" alt="preview">
                             </picture>
                         </a>
@@ -243,12 +269,14 @@
                             target="_blank">
                             <picture>
                                 <source type="image/webp" srcset="img/preview-img-item-2.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-2.jpg">
                                 <img data-src="img/preview-img-item-2.jpg" alt="preview">
                             </picture>
                         </a>
                         <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/" target="_blank">
                             <picture>
                                 <source type="image/webp" srcset="img/preview-img-item-1.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-1.jpg">
                                 <img data-src="img/preview-img-item-1.jpg" alt="preview">
                             </picture>
                         </a>
@@ -428,8 +456,8 @@
         </svg>
     </div>
 </button>
-	<script src="js/libs.min.js"></script>
-<script src="js/main.min.js"></script>
+	<script async src="js/libs.min.js"></script>
+<script async src="js/main.min.js"></script>
 
 </body>
 

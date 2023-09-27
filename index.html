@@ -23,11 +23,28 @@
 	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
 	<link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.min.css?ver=0.0.8">
+
+	<!-- preload resource -->
+	<link rel="preload" href="img/photo.png" as="image">
+	<link rel="preload" href="img/card-preview-01.png" as="image">
+	<link rel="preload" href="img/card-preview-02.png" as="image">
+	<link rel="preload" href="img/photo.webp" as="image">
+	<link rel="preload" href="img/card-preview-01.webp" as="image">
+	<link rel="preload" href="img/card-preview-02.webp" as="image">
+	
+	<link rel="preload" href="img/preview-img.png" as="image">
+	<link rel="preload" href="img/preview-img-2.png" as="image">
+	<link rel="preload" href="img/preview-img.webp" as="image">
+	<link rel="preload" href="img/preview-img-2.webp" as="image">
+
+	<link rel="preload" href="css/style.min.css?ver=0.0.9" as="style">
+	<link rel="preload" href="js/libs.min.js" as="script">
+	<link rel="preload" href="js/main.min.js" as="script">
+	<!-- preload resource -->
+
+	<link rel="stylesheet" href="css/style.min.css?ver=0.0.9">
 	<title>Maxuiux Portfolio</title>
 </head>
-
-
 
 <body class="overflow body">
 	<header class="header">
@@ -51,12 +68,12 @@
                 <div class="social-anim-line__dotted"></div>
             </div>
             <div class="social-icons">
-                <a class="social-icon" href="https://www.behance.net/maxuiux" target="_blank">
+                <a class="social-icon" href="https://www.behance.net/maxuiux" target="_blank" aria-label="behance">
                     <svg class="social-icon__behance">
                         <use xlink:href="img/sprite.svg#behance"></use>
                     </svg>
                 </a>
-                <a class="social-icon" href="https://codepen.io/maxuiux" target="_blank">
+                <a class="social-icon" href="https://codepen.io/maxuiux" target="_blank" aria-label="codepen">
                     <svg class="social-icon__codepen">
                         <use xlink:href="img/sprite.svg#codepen"></use>
                     </svg>
@@ -162,6 +179,7 @@
                 <div class="photo__inner">
                     <picture>
                         <source type="image/webp" srcset="img/photo.webp">
+                        <source type="image/png" srcset="img/photo.png">
                         <img src="img/photo.png" alt="Photo Maxuiux">
                     </picture>
                     <h2 class="dev">
@@ -189,6 +207,7 @@
             <div class="card__img">
                 <picture>
                     <source type="image/webp" srcset="img/card-preview-01.webp">
+                    <source type="image/png" srcset="img/card-preview-01.png">
                     <img src="img/card-preview-01.png" alt="Technical Design">
                 </picture>
             </div>
@@ -205,6 +224,7 @@
             <div class="card__img">
                 <picture>
                     <source type="image/webp" srcset="img/card-preview-02.webp">
+                    <source type="image/png" srcset="img/card-preview-02.png">
                     <img src="img/card-preview-02.png" alt="Web Developer">
                 </picture>
             </div>
@@ -263,8 +283,8 @@
         </svg>
     </div>
 </button>
-	<script src="js/libs.min.js"></script>
-<script src="js/main.min.js"></script>
+	<script async src="js/libs.min.js"></script>
+<script async src="js/main.min.js"></script>
 
 </body>
 
