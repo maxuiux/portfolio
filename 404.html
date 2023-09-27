@@ -25,6 +25,11 @@
 	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
 
 	<!-- preload resource -->
+	<link rel="preload" href="css/style.min.css" as="style">
+	
+	<link rel="preload" href="js/libs.min.js" as="script">
+	<link rel="preload" href="js/main.min.js" as="script">
+	
 	<link rel="preload" href="img/photo.png" as="image">
 	<link rel="preload" href="img/card-preview-01.png" as="image">
 	<link rel="preload" href="img/card-preview-02.png" as="image">
@@ -37,12 +42,9 @@
 	<link rel="preload" href="img/preview-img.webp" as="image">
 	<link rel="preload" href="img/preview-img-2.webp" as="image">
 
-	<link rel="preload" href="css/style.min.css?ver=0.0.9" as="style">
-	<link rel="preload" href="js/libs.min.js" as="script">
-	<link rel="preload" href="js/main.min.js" as="script">
 	<!-- preload resource -->
 
-	<link rel="stylesheet" href="css/style.min.css?ver=0.0.9">
+	<link rel="stylesheet" href="css/style.min.css?ver=0.0.10">
 	<title>Maxuiux Portfolio</title>
 </head>
 
@@ -82,6 +84,11 @@
                         <use xlink:href="img/sprite.svg#codepen"></use>
                     </svg>
                 </a>
+                <button class="social-icon switch-theme">
+                    <svg class="social-icon__theme">
+                        <use xlink:href="img/sprite.svg#icon-theme"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -225,8 +232,8 @@
         </svg>
     </div>
 </button>
-	<script async src="js/libs.min.js"></script>
-<script async src="js/main.min.js"></script>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
 
 </body>
 
