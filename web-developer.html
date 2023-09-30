@@ -48,7 +48,7 @@
 	<title>Maxuiux Portfolio</title>
 </head>
 
-<body class="body">
+<body class="body overflow">
 	<div class="preloader">
     <div class="preloader__inner">
         <div class="preloader__logo">
@@ -73,7 +73,12 @@
 <script>
     window.addEventListener('load', () => {
         let preloader = document.querySelector('.preloader')
-        preloader.classList.add('preloader-none');
+        let body = document.querySelector('.body')
+        let overflow = 'overflow'
+
+        preloader.classList.add('preloader-none')
+        body.classList.remove(overflow)
+
     })
 </script>
 
