@@ -2,7 +2,6 @@
     "theme_color": "#000000",
     "background_color": "#000000",
     "display": "fullscreen",
-    "scope": "/",
     "start_url": "/portfolio/index.html",
     "name": "Maxuiux App",
     "short_name": "maxuiux",
