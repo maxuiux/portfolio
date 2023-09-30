@@ -44,11 +44,11 @@
 
 	<!-- preload resource -->
 
-	<link rel="stylesheet" href="css/style.min.css?ver=0.0.18">
+	<link rel="stylesheet" href="css/style.min.css?ver=0.0.19">
 	<title>Maxuiux Portfolio</title>
 </head>
 
-<body class="overflow body">
+<body id="body" class="overflow body">
 	<div class="preloader">
     <div class="preloader__inner">
         <div class="preloader__logo">
@@ -74,7 +74,7 @@
     window.addEventListener('load', () => {
         let preloader = document.querySelector('.preloader')
         let body = document.querySelector('.body')
-        let overflow = 'overflow'
+        let overflow = 'overflow2'
 
         preloader.classList.add('preloader-none')
         body.classList.remove(overflow)
