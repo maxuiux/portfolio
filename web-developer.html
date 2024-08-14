@@ -10,25 +10,24 @@
            ╙╝▒   ]▒╝╜      ╙ß╥╓╗Ñ▒   ╙╜   ╙`   ╙╣╗╖╥╣╜    ▒     ╢N╖╥@╜    ╨╜  `╝
 -->
 <!--
-		https://maxuiux.github.io/portfolio/ 2023 © copyright maxuiux
+		https://maxuiux.github.io/portfolio/ 2023 - 2024 © copyright maxuiux
 -->
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Game Developer, Web Developer">
 	<meta name="keywords" content="maxuiux, web developer, game developer, developer, development, gulp, html, css, scss, sass, wordpress, animation, photoshop, figma">
-	<link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
-	<link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
-	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="img/favicons/favicon.webp" type="image/webp">
+	<link rel="icon" href="img/favicons/favicon.png" type="image/png">
+	<link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
 	<meta name="theme-color" content="#000000">
 
 	<!-- preload resource -->
 	<link rel="preload" href="css/style.min.css" as="style">
 
-	<link rel="preload" href="js/libs.min.js" as="script">
 	<link rel="preload" href="js/main.min.js" as="script">
 
 	<link rel="preload" href="img/photo.png" as="image">
@@ -42,10 +41,12 @@
 	<link rel="preload" href="img/preview-img-2.png" as="image">
 	<link rel="preload" href="img/preview-img.webp" as="image">
 	<link rel="preload" href="img/preview-img-2.webp" as="image">
+	<!-- #preload resource -->
 
-	<!-- preload resource -->
-
-	<link rel="stylesheet" href="css/style.min.css?ver=0.0.23">
+	<link rel="stylesheet" href="css/style.min.css?ver=0.0.24">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="libs/fancybox/fancybox.css">
+	
 	<link rel="manifest" href="manifest.webmanifest">
 	<title>Maxuiux Portfolio</title>
 </head>
@@ -80,7 +81,6 @@
 
         preloader.classList.add('preloader-none')
         body.classList.remove(overflow)
-
     })
 </script>
 
@@ -97,9 +97,9 @@
                     <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
             </a>
-            <button class="header-button">
+            <button id="header-button" class="header-button">
                 <div class="wrapper">
-                    <span class="lng-job">Offer a job</span>
+                    <span class="lng-job">Написать</span>
                     <div class="circle circle-12"></div>
                     <div class="circle circle-11"></div>
                     <div class="circle circle-10"></div>
@@ -139,7 +139,7 @@
                     </svg>
                 </button>
                 <button class="social-icon btn-lang lng-btn_lang">
-                    RU
+                    EN
                 </button>
             </div>
         </div>
@@ -236,10 +236,10 @@
     <section class="blog-info">
         <div class="container">
             <h1 class="title lng-wd_title">
-                Web Developer
+                Веб Разработчик
             </h1>
             <h2 class="subtitle lng-wd_subtitle">
-                HTML/CSS/JS and others
+                HTML/CSS/JS и другие
             </h2>
         </div>
     </section>
@@ -247,95 +247,340 @@
     <section class="blog-box">
         <div class="container">
             <div class="blog-box__inner">
-                <div class="blog-box__img blog-box__img--position">
-                    <picture>
-                        <source type="image/webp" srcset="img/preview-img-2.webp">
-                        <source type="image/png" srcset="img/preview-img-2.png">
-                        <img src="img/preview-img-2.png" alt="Preview Main Img">
-                    </picture>
+                <div class="blog-box__img">
+
+                    <div class="blog-box__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-19.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-19.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-19.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-19.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-01.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-01.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-01.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-01.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-02.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-02.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-02.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-02.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-03.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-03.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-03.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-03.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-04.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-04.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-04.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-04.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-05.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-05.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-05.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-05.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-06.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-06.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-06.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-06.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-07.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-07.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-07.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-07.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-08.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-08.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-08.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-08.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-09.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-09.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-09.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-09.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-10.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-10.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-10.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-10.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-11.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-11.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-11.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-11.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-12.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-12.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-12.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-12.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-13.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-13.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-13.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-13.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-14.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-14.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-14.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-14.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-15.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-15.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-15.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-15.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-16.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-16.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-16.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-16.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-17.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-17.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-17.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-17.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source type="image/avif" srcset="img/blog-box-wd-slider-18.avif">
+                                    <source type="image/webp" srcset="img/blog-box-wd-slider-18.webp">
+                                    <source type="image/png" srcset="img/blog-box-wd-slider-18.jpg">
+                                    <img loading="lazy" src="img/blog-box-wd-slider-18.jpg" alt="Preview Main Img">
+                                </picture>
+                            </div>
+
+                        </div>
+                    </div>
+                    
                 </div>
+                
                 <div class="blog-box__title lng-wd_box_title">
-                    Developed websites of varying levels of complexity.
+                    Я профессиональный специалист по HTML-верстке сайтов с опытом работы более 5 лет.
                 </div>
-                <div class="blog-box__subtitle lng-wd_box_subtitle">
-                    More than five years of experience working with websites. The emphasis can be placed on the layout of sites of varying complexity.
+                <div class="blog-box__subtitle">
+                    <p class="lng-wd_box_p_01">
+                        Мои ключевые навыки включают HTML, CSS, SCSS, JS, jQuery, Gulp, Wordpress, Photoshop, Figma и
+                        Bootstrap.
+                    </p>
+                    <p class="lng-wd_box_p_02">
+                        Я имею опыт работы с различными проектами, от небольших лендингов до крупных корпоративных
+                        сайтов. Стремлюсь создавать качественные, удобные и красивые сайты, которые будут
+                        соответствовать потребностям моих клиентов.
+                    </p>
                 </div>
                 <div class="blog-box-items">
                     <div class="blog-box-items__inner">
-                        <a class="blog-box-items__link" href="https://b1.yoursite.guru/" target="_blank">
-                            <picture>
-                                <source type="image/webp" srcset="img/preview-img-item-10.webp">
-                                <source type="image/jpeg" srcset="img/preview-img-item-10.jpg">
-                                <img data-src="img/preview-img-item-10.jpg" alt="preview">
-                            </picture>
-                        </a>
-                        <a class="blog-box-items__link" href="https://t-modul.ru/" target="_blank">
-                            <picture>
-                                <source type="image/webp" srcset="img/preview-img-item-9.webp">
-                                <source type="image/jpeg" srcset="img/preview-img-item-9.jpg">
-                                <img data-src="img/preview-img-item-9.jpg" alt="preview">
-                            </picture>
-                        </a>
-                        <a class="blog-box-items__link" href="https://papamedia.ru/" target="_blank">
-                            <picture>
-                                <source type="image/webp" srcset="img/preview-img-item-8.webp">
-                                <source type="image/jpeg" srcset="img/preview-img-item-8.jpg">
-                                <img data-src="img/preview-img-item-8.jpg" alt="preview">
-                            </picture>
-                        </a>
-                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux-portfolio-work-01/"
-                            target="_blank">
-                            <picture>
-                                <source type="image/webp" srcset="img/preview-img-item-7.webp">
-                                <source type="image/jpeg" srcset="img/preview-img-item-7.jpg">
-                                <img data-src="img/preview-img-item-7.jpg" alt="preview">
-                            </picture>
-                        </a>
-                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux-portfolio-work-02/"
-                            target="_blank">
-                            <picture>
-                                <source type="image/webp" srcset="img/preview-img-item-6.webp">
-                                <source type="image/jpeg" srcset="img/preview-img-item-6.jpg">
-                                <img data-src="img/preview-img-item-6.jpg" alt="preview">
-                            </picture>
-                        </a>
-                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux-portfolio-work-03/"
-                            target="_blank">
-                            <picture>
-                                <source type="image/webp" srcset="img/preview-img-item-5.webp">
-                                <source type="image/jpeg" srcset="img/preview-img-item-5.jpg">
-                                <img data-src="img/preview-img-item-5.jpg" alt="preview">
-                            </picture>
-                        </a>
-                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux-portfolio-work-04/"
-                            target="_blank">
-                            <picture>
-                                <source type="image/webp" srcset="img/preview-img-item-4.webp">
-                                <source type="image/jpeg" srcset="img/preview-img-item-4.jpg">
-                                <img data-src="img/preview-img-item-4.jpg" alt="preview">
-                            </picture>
-                        </a>
-                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux-portfolio-work-05/"
-                            target="_blank">
-                            <picture>
-                                <source type="image/webp" srcset="img/preview-img-item-3.webp">
-                                <source type="image/jpeg" srcset="img/preview-img-item-3.jpg">
-                                <img data-src="img/preview-img-item-3.jpg" alt="preview">
-                            </picture>
-                        </a>
-                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux-portfolio-work-06/"
-                            target="_blank">
-                            <picture>
-                                <source type="image/webp" srcset="img/preview-img-item-2.webp">
-                                <source type="image/jpeg" srcset="img/preview-img-item-2.jpg">
-                                <img data-src="img/preview-img-item-2.jpg" alt="preview">
-                            </picture>
-                        </a>
                         <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/" target="_blank">
                             <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-19.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-19.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-19.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-19.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/bureau-of-architecture" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-15.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-15.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-15.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-15.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/drag-dots" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-11.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-11.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-11.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-11.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/muiuxos" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-13.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-13.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-13.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-13.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/yandex-go-scooter" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-16.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-16.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-16.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-16.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/website-everything-for-nails" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-14.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-14.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-14.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-14.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/bankruptcy-bureau-number-1" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-10.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-10.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-10.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-10.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/plumbing-and-electrical-works" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-12.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-12.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-12.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-12.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/techno-module" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-9.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-9.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-9.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-9.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/papa-media/" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-8.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-8.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-8.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-8.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/gym-website"
+                            target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-7.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-7.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-7.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-7.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/construction-company-website"
+                            target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-6.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-6.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-6.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-6.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/frontend-developer-portfolio"
+                            target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-5.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-5.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-5.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-5.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/mobile-application-website/"
+                            target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-4.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-4.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-4.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-4.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/digital-agency-website/"
+                            target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-3.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-3.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-3.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-3.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/photographers-portfolio-website"
+                            target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-2.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-2.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-2.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-2.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/third-iteration-portfolio-maxuiux/" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-1.avif">
                                 <source type="image/webp" srcset="img/preview-img-item-1.webp">
                                 <source type="image/jpeg" srcset="img/preview-img-item-1.jpg">
-                                <img data-src="img/preview-img-item-1.jpg" alt="preview">
+                                <img loading="lazy" data-src="img/preview-img-item-1.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/tesla-model-s-website" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-0.1.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-0.1.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-0.1.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-0.1.jpg" alt="preview">
+                            </picture>
+                        </a>
+                        <a class="blog-box-items__link" href="https://maxuiux.github.io/maxuiux/portfolio/website-hosting-provider" target="_blank">
+                            <picture>
+                                <source type="image/avif" srcset="img/preview-img-item-0.avif">
+                                <source type="image/webp" srcset="img/preview-img-item-0.webp">
+                                <source type="image/jpeg" srcset="img/preview-img-item-0.jpg">
+                                <img loading="lazy" data-src="img/preview-img-item-0.jpg" alt="preview">
                             </picture>
                         </a>
                     </div>
@@ -344,6 +589,7 @@
                     Skills
                 </div>
                 <div class="blog-box__skills">
+                
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
@@ -354,16 +600,40 @@
                             HTML/CSS
                         </div>
                     </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
-                                <use xlink:href="img/sprite.svg#icon-js"></use>
+                                <use xlink:href="img/sprite.svg#icon-javascript"></use>
                             </svg>
                         </div>
                         <div class="blog-box__skills-title">
-                            JS/jQuery
+                            JavaScript
                         </div>
                     </div>
+                    
+                    <div class="blog-box__skills-item">
+                        <div class="blog-box__skills-icon">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-sass"></use>
+                            </svg>
+                        </div>
+                        <div class="blog-box__skills-title">
+                            SCSS / SASS
+                        </div>
+                    </div>
+                    
+                    <div class="blog-box__skills-item">
+                        <div class="blog-box__skills-icon">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-webpack"></use>
+                            </svg>
+                        </div>
+                        <div class="blog-box__skills-title">
+                            WebPack
+                        </div>
+                    </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
@@ -374,16 +644,29 @@
                             Gulp
                         </div>
                     </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
-                                <use xlink:href="img/sprite.svg#icon-sass"></use>
+                                <use xlink:href="img/sprite.svg#icon-gsap"></use>
                             </svg>
                         </div>
                         <div class="blog-box__skills-title">
-                            SCSS/SASS
+                            GSAP
                         </div>
                     </div>
+                    
+                    <div class="blog-box__skills-item">
+                        <div class="blog-box__skills-icon">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-tailwind"></use>
+                            </svg>
+                        </div>
+                        <div class="blog-box__skills-title">
+                            Tailwind CSS
+                        </div>
+                    </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
@@ -394,6 +677,7 @@
                             Git
                         </div>
                     </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
@@ -401,9 +685,10 @@
                             </svg>
                         </div>
                         <div class="blog-box__skills-title">
-                            Wordpress
+                            WordPress
                         </div>
                     </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
@@ -414,6 +699,18 @@
                             Figma
                         </div>
                     </div>
+                    
+                    <div class="blog-box__skills-item">
+                        <div class="blog-box__skills-icon">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-ux"></use>
+                            </svg>
+                        </div>
+                        <div class="blog-box__skills-title">
+                            UX / UI Design
+                        </div>
+                    </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
@@ -424,46 +721,95 @@
                             Photoshop
                         </div>
                     </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
                                 <use xlink:href="img/sprite.svg#icon-google"></use>
                             </svg>
                         </div>
-                        <div class="blog-box__skills-title lng-wd_box_solution">
-                            Finding Solutions
+                        <div class="blog-box__skills-title">
+                            Поиск Решений
                         </div>
                     </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
                                 <use xlink:href="img/sprite.svg#icon-ai"></use>
                             </svg>
                         </div>
-                        <div class="blog-box__skills-title lng-wd_box_ai">
-                            Using AI Tools
+                        <div class="blog-box__skills-title">
+                            Использование ИИ
                         </div>
                     </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
                                 <use xlink:href="img/sprite.svg#icon-idea"></use>
                             </svg>
                         </div>
-                        <div class="blog-box__skills-title lng-wd_box_ideas">
-                            Ideas
+                        <div class="blog-box__skills-title">
+                            Идеи
                         </div>
                     </div>
+                    
                     <div class="blog-box__skills-item">
                         <div class="blog-box__skills-icon">
                             <svg>
                                 <use xlink:href="img/sprite.svg#icon-handshake"></use>
                             </svg>
                         </div>
-                        <div class="blog-box__skills-title lng-wd_box_сommunication">
-                            Communication
+                        <div class="blog-box__skills-title">
+                            Коммуникация
                         </div>
                     </div>
+                    
+                    <div class="blog-box__skills-item">
+                        <div class="blog-box__skills-icon">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-award"></use>
+                            </svg>
+                        </div>
+                        <div class="blog-box__skills-title">
+                            Профессионализм
+                        </div>
+                    </div>
+                    
+                    <div class="blog-box__skills-item">
+                        <div class="blog-box__skills-icon">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-patch-check-fill"></use>
+                            </svg>
+                        </div>
+                        <div class="blog-box__skills-title">
+                            Качество
+                        </div>
+                    </div>
+                    
+                    <div class="blog-box__skills-item">
+                        <div class="blog-box__skills-icon">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-shield-fill-check"></use>
+                            </svg>
+                        </div>
+                        <div class="blog-box__skills-title">
+                            Надежно
+                        </div>
+                    </div>
+                    
+                    <div class="blog-box__skills-item">
+                        <div class="blog-box__skills-icon">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#icon-key-fill"></use>
+                            </svg>
+                        </div>
+                        <div class="blog-box__skills-title">
+                            Под ключ
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -476,7 +822,7 @@
         <div class="modal-content">
             <div class="modal-content__inner">
                 <div class="modal-content__title lng-modal">
-                    Offer a job
+                    Написать
                 </div>
                 <div class="modal-content__icon">
                     <svg class="modal-content__icon-sprite">
@@ -514,7 +860,8 @@
         </svg>
     </div>
 </button>
-	<script src="js/libs.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="libs/fancybox/fancybox.umd.js"></script>
 <script src="js/main.min.js"></script>
 
 </body>

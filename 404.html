@@ -10,25 +10,24 @@
            ╙╝▒   ]▒╝╜      ╙ß╥╓╗Ñ▒   ╙╜   ╙`   ╙╣╗╖╥╣╜    ▒     ╢N╖╥@╜    ╨╜  `╝
 -->
 <!--
-		https://maxuiux.github.io/portfolio/ 2023 © copyright maxuiux
+		https://maxuiux.github.io/portfolio/ 2023 - 2024 © copyright maxuiux
 -->
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Game Developer, Web Developer">
 	<meta name="keywords" content="maxuiux, web developer, game developer, developer, development, gulp, html, css, scss, sass, wordpress, animation, photoshop, figma">
-	<link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
-	<link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
-	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="img/favicons/favicon.webp" type="image/webp">
+	<link rel="icon" href="img/favicons/favicon.png" type="image/png">
+	<link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
 	<meta name="theme-color" content="#000000">
 
 	<!-- preload resource -->
 	<link rel="preload" href="css/style.min.css" as="style">
 
-	<link rel="preload" href="js/libs.min.js" as="script">
 	<link rel="preload" href="js/main.min.js" as="script">
 
 	<link rel="preload" href="img/photo.png" as="image">
@@ -42,10 +41,12 @@
 	<link rel="preload" href="img/preview-img-2.png" as="image">
 	<link rel="preload" href="img/preview-img.webp" as="image">
 	<link rel="preload" href="img/preview-img-2.webp" as="image">
+	<!-- #preload resource -->
 
-	<!-- preload resource -->
-
-	<link rel="stylesheet" href="css/style.min.css?ver=0.0.23">
+	<link rel="stylesheet" href="css/style.min.css?ver=0.0.24">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="libs/fancybox/fancybox.css">
+	
 	<link rel="manifest" href="manifest.webmanifest">
 	<title>Maxuiux Portfolio</title>
 </head>
@@ -80,7 +81,6 @@
 
         preloader.classList.add('preloader-none')
         body.classList.remove(overflow)
-
     })
 </script>
 
@@ -97,9 +97,9 @@
                     <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
             </a>
-            <button class="header-button">
+            <button id="header-button" class="header-button">
                 <div class="wrapper">
-                    <span class="lng-job">Offer a job</span>
+                    <span class="lng-job">Написать</span>
                     <div class="circle circle-12"></div>
                     <div class="circle circle-11"></div>
                     <div class="circle circle-10"></div>
@@ -139,7 +139,7 @@
                     </svg>
                 </button>
                 <button class="social-icon btn-lang lng-btn_lang">
-                    RU
+                    EN
                 </button>
             </div>
         </div>
@@ -246,7 +246,7 @@
         <div class="modal-content">
             <div class="modal-content__inner">
                 <div class="modal-content__title lng-modal">
-                    Offer a job
+                    Написать
                 </div>
                 <div class="modal-content__icon">
                     <svg class="modal-content__icon-sprite">
@@ -284,7 +284,8 @@
         </svg>
     </div>
 </button>
-	<script src="js/libs.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="libs/fancybox/fancybox.umd.js"></script>
 <script src="js/main.min.js"></script>
 
 </body>

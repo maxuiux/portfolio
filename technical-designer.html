@@ -10,25 +10,24 @@
            ╙╝▒   ]▒╝╜      ╙ß╥╓╗Ñ▒   ╙╜   ╙`   ╙╣╗╖╥╣╜    ▒     ╢N╖╥@╜    ╨╜  `╝
 -->
 <!--
-		https://maxuiux.github.io/portfolio/ 2023 © copyright maxuiux
+		https://maxuiux.github.io/portfolio/ 2023 - 2024 © copyright maxuiux
 -->
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Game Developer, Web Developer">
 	<meta name="keywords" content="maxuiux, web developer, game developer, developer, development, gulp, html, css, scss, sass, wordpress, animation, photoshop, figma">
-	<link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
-	<link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
-	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="img/favicons/favicon.webp" type="image/webp">
+	<link rel="icon" href="img/favicons/favicon.png" type="image/png">
+	<link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
 	<meta name="theme-color" content="#000000">
 
 	<!-- preload resource -->
 	<link rel="preload" href="css/style.min.css" as="style">
 
-	<link rel="preload" href="js/libs.min.js" as="script">
 	<link rel="preload" href="js/main.min.js" as="script">
 
 	<link rel="preload" href="img/photo.png" as="image">
@@ -42,10 +41,12 @@
 	<link rel="preload" href="img/preview-img-2.png" as="image">
 	<link rel="preload" href="img/preview-img.webp" as="image">
 	<link rel="preload" href="img/preview-img-2.webp" as="image">
+	<!-- #preload resource -->
 
-	<!-- preload resource -->
-
-	<link rel="stylesheet" href="css/style.min.css?ver=0.0.23">
+	<link rel="stylesheet" href="css/style.min.css?ver=0.0.24">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="libs/fancybox/fancybox.css">
+	
 	<link rel="manifest" href="manifest.webmanifest">
 	<title>Maxuiux Portfolio</title>
 </head>
@@ -80,7 +81,6 @@
 
         preloader.classList.add('preloader-none')
         body.classList.remove(overflow)
-
     })
 </script>
 
@@ -97,9 +97,9 @@
                     <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
             </a>
-            <button class="header-button">
+            <button id="header-button" class="header-button">
                 <div class="wrapper">
-                    <span class="lng-job">Offer a job</span>
+                    <span class="lng-job">Написать</span>
                     <div class="circle circle-12"></div>
                     <div class="circle circle-11"></div>
                     <div class="circle circle-10"></div>
@@ -139,7 +139,7 @@
                     </svg>
                 </button>
                 <button class="social-icon btn-lang lng-btn_lang">
-                    RU
+                    EN
                 </button>
             </div>
         </div>
@@ -236,10 +236,10 @@
     <section class="blog-info">
         <div class="container">
             <h1 class="title lng-td_title">
-                Technical Design
+                Тех. Дизайнер
             </h1>
             <h2 class="subtitle lng-td_subtitle">
-                Playrix | Township
+                Плейрикс | Товншип
             </h2>
         </div>
     </section>
@@ -249,18 +249,29 @@
             <div class="blog-box__inner">
                 <div class="blog-box__img">
                     <picture>
+                        <source type="image/avif" srcset="img/preview-img.avif">
                         <source type="image/webp" srcset="img/preview-img.webp">
                         <source type="image/png" srcset="img/preview-img.png">
-                        <img src="img/preview-img.png" alt="Preview Main Img">
+                        <img loading="lazy" src="img/preview-img.png" alt="Preview Main Img">
                     </picture>
                 </div>
                 <div class="blog-box__title lng-td_box_title">
-                    Worked on the mobile game Township, which is played by around 100 million people every day.
+                    Я работал над мобильной игрой Township! 🏡
                 </div>
-                <div class="blog-box__subtitle lng-td_box_subtitle">
-                    I was a member of the Art Renovation mini team as a Technical Designer. Responsible for updating old
-                    game graphics with new ones, additional layout of game windows and other unusual tasks. Updated over
-                    90% of the graphics in the game!
+                <div class="blog-box__subtitle">
+                    <p class="lng-td_box_p_01">
+                        Изначально я был членом команды Фичей, а затем состоял в мини-команде Арт-Реновация на позиции
+                        Технического Дизайнера. Занимался обновлением старой графики в игре на новую, а также версткой
+                        игровых окон разной сложности и выполнением других необычных задач с использованием игрового
+                        движка VSO, xml, json, c++, проприетарных скриптов и других инструментов. Обновил более 90%
+                        графики в игре, выполнив нарезку, перевставку артов, а также, заменой анимации (flash, spine) и
+                        обновляя верстку окон и прочие элементы.
+                    </p>
+                    <p class="lng-td_box_p_02">
+                        Также я отвечал за контроль качества конечного продукта и поддерживал коммуникацию с другими
+                        членами команды, такими как Продюсеры, Художники, Аниматоры, Программисты, VFX-специалисты,
+                        Тестировщики и другие.
+                    </p>
                 </div>
                 <div class="blog-box__achievements">
                     <div class="blog-box__item">
@@ -286,7 +297,7 @@
                                 </svg>
                             </div>
                             <div class="blog-box__item-title lng-td_box_objects">
-                                Objects
+                                Объектов
                             </div>
                         </div>
                         <div class="blog-box__item-counter">
@@ -301,7 +312,7 @@
                                 </svg>
                             </div>
                             <div class="blog-box__item-title lng-td_box_characters">
-                                Characters
+                                Персонажей
                             </div>
                         </div>
                         <div class="blog-box__item-counter">
@@ -316,7 +327,7 @@
                                 </svg>
                             </div>
                             <div class="blog-box__item-title lng-td_box_other">
-                                Other
+                                Остальное
                             </div>
                         </div>
                         <div class="blog-box__item-counter">
@@ -324,373 +335,367 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn-more">
-                    <button class="blog-box__btn-more lng-td_btn_more">
-                        More
-                    </button>
-                </div>
-                <div class="blog-box__block">
-                    <p class="lng-td_box_p_01">
-                        The main achievement of my work was that 90% of the new graphics in the game were updated by me
-                        in less than 1 year. Thanks to this work, the company was able to monetize even more content in
-                        the game, as a result the revenues of the game have doubled compared to previous years. I would
-                        like to emphasize that the responsibility and conscientiousness, the artists, animators,
-                        programmers, also played their important role in updating the graphics.
-                    </p>
-                    <p class="lng-td_box_p_02">
-                        At the time the game was being worked on, it was over 8 years old. A lot of old xml code was
-                        being used to set up various processes in the game. The game was gradually moving to its own
-                        visual game engine, VSO, and many of the development processes were completely transferred
-                        there. The game is too big, legacy code is a lot, so I was a highly specialized specialist who
-                        could easily deal with the old files and everything related to them.
-                    </p>
-                    <p class="lng-td_box_p_03">
-                        Worked and interacted with hundreds of different people, participated in team calls, discussed
-                        work details and conducted quality communication between different professionals to arrive at a
-                        better result and completion of the work.
-                    </p>
-                    <p class="lng-td_box_p_04">
-                        Interacted with legacy code, mostly proprietary xml and VSO game engine. Additionally worked
-                        with .json, .cpp, .py. files, proprietary scripts, setting up compression formats, and more.
-                    </p>
-                    <p class="lng-td_box_p_05">
-                        The actual process of updating the graphics was interacting with the xml code, setting up
-                        graphics atlases, plugging in and updating Flash and Spine animations, alignment, and fixing old
-                        visual bugs. In addition, I was engaged in layout of various windows on xml and new via VSO game
-                        engine, using the artists' source material in Photoshop. Connecting, layout of new seasonal
-                        events such as: Regatta, Surfingers, Helix Jump, Expedition and others, to all these events I
-                        connected my xml balance, which was compiled by the game designers.
-                    </p>
-                    <p class="lng-td_box_p_06">
-                        The second major achievement in the company, was that I became a full-time project manager for
-                        sending out push notifications. This topic was underdeveloped in the company and no one was
-                        serious about it. Initially, I was entering the push notifications myself on a special website
-                        and did a lot of conveyor belt work. I therefore set up a whole separate Push Notifications
-                        project in which I organised people from different teams, Technical Designers. The duties of
-                        sending the push notifications were divided among the mini-teams of the events for which the
-                        push notifications were to be made.
-                    </p>
-                    <p class="lng-td_box_p_07">
-                        Now the push notifications department has become fully autonomous and self-sufficient, the
-                        project is being taken seriously, and its work has become efficient and productive. But before
-                        that, I did a lot of work, setting up a project in Asana in which people can keep track of
-                        sending tasks, organising sections and making the process transparent. Organized a chat in
-                        Slack, for participants sending push notifications, informed about the work with push
-                        notifications and useful other information. Helped newcomers in practice and taught them the
-                        process. After that, I organised a detailed and informative article in the Knowledge Base, in
-                        which I described the process of working with push-notifications. After that, I recorded a video
-                        tutorial, in which I demonstrated the process of working with push notifications on visual
-                        examples and set up time codes for easy interaction.
-                    </p>
-                    <p class="lng-td_box_p_08">
-                        The project has improved the process of sending push notifications, reducing the burden on
-                        people and increasing revenues by bringing paying players back into the game, thanks to a
-                        well-functioning system of sending push notifications. It has also improved the sending service
-                        itself, as it has become an important tool when dealing with push notifications.
-                    </p>
-                    <p class="lng-td_box_p_09">
-                        There are many more achievements that I could tell you about, but I'm afraid it would take a
-                        whole book of 100 pages. My short conclusion is that I am a valuable specialist and a
-                        professional in my business, efficient, communicative. The more I work in one place, the better
-                        my work skills. I can also work in related professions of game development: Producer, Team
-                        Leader, Game Designer and other important specialist, to improve the product.
-                    </p>
-                </div>
+
                 <div class="blog-box__gallery">
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-1.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-1.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-1.avif">
                                 <source type="image/webp" srcset="img/img-preview-1.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-1.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-1.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-1.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-2.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-2.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-2.avif">
                                 <source type="image/webp" srcset="img/img-preview-2.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-2.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-2.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-2.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-3.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-3.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-3.avif">
                                 <source type="image/webp" srcset="img/img-preview-3.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-3.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-3.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-3.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-4.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-4.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-4.avif">
                                 <source type="image/webp" srcset="img/img-preview-4.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-4.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-4.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-4.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-5.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-5.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-5.avif">
                                 <source type="image/webp" srcset="img/img-preview-5.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-5.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-5.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-5.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-6.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-6.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-6.avif">
                                 <source type="image/webp" srcset="img/img-preview-6.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-6.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-6.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-6.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-7.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-7.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-7.avif">
                                 <source type="image/webp" srcset="img/img-preview-7.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-7.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-7.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-7.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-8.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-8.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-8.avif">
                                 <source type="image/webp" srcset="img/img-preview-8.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-8.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-8.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-8.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-9.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-9.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-9.avif">
                                 <source type="image/webp" srcset="img/img-preview-9.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-9.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-9.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-9.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-10.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-10.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-10.avif">
                                 <source type="image/webp" srcset="img/img-preview-10.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-10.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-10.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-10.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-11.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-11.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-11.avif">
                                 <source type="image/webp" srcset="img/img-preview-11.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-11.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-11.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-11.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-12.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-12.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-12.avif">
                                 <source type="image/webp" srcset="img/img-preview-12.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-12.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-12.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-12.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-13.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-13.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-13.avif">
                                 <source type="image/webp" srcset="img/img-preview-13.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-13.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-13.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-13.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-14.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-14.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-14.avif">
                                 <source type="image/webp" srcset="img/img-preview-14.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-14.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-14.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-14.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-15.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-15.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-15.avif">
                                 <source type="image/webp" srcset="img/img-preview-15.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-15.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-15.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-15.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-16.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-16.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-16.avif">
                                 <source type="image/webp" srcset="img/img-preview-16.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-16.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-16.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-16.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-17.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-17.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-17.avif">
                                 <source type="image/webp" srcset="img/img-preview-17.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-17.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-17.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-17.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-18.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-18.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-18.avif">
                                 <source type="image/webp" srcset="img/img-preview-18.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-18.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-18.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-18.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-19.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-19.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-19.avif">
                                 <source type="image/webp" srcset="img/img-preview-19.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-19.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-19.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-19.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-20.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-20.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-20.avif">
                                 <source type="image/webp" srcset="img/img-preview-20.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-20.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-20.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-20.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-21.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-21.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-21.avif">
                                 <source type="image/webp" srcset="img/img-preview-21.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-21.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-21.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-21.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-22.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-22.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-22.avif">
                                 <source type="image/webp" srcset="img/img-preview-22.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-22.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-22.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-22.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-23.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-23.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-23.avif">
                                 <source type="image/webp" srcset="img/img-preview-23.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-23.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-23.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-23.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-24.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-24.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-24.avif">
                                 <source type="image/webp" srcset="img/img-preview-24.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-24.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-24.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-24.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-25.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-25.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-25.avif">
                                 <source type="image/webp" srcset="img/img-preview-25.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-25.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-25.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-25.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-26.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-26.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-26.avif">
                                 <source type="image/webp" srcset="img/img-preview-26.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-26.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-26.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-26.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-27.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-27.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-27.avif">
                                 <source type="image/webp" srcset="img/img-preview-27.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-27.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-27.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-27.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-28.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-28.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-28.avif">
                                 <source type="image/webp" srcset="img/img-preview-28.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-28.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-28.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-28.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-29.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-29.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-29.avif">
                                 <source type="image/webp" srcset="img/img-preview-29.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-29.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-29.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-29.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-30.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-30.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-30.avif">
                                 <source type="image/webp" srcset="img/img-preview-30.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-30.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-30.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-30.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-31.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-31.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-31.avif">
                                 <source type="image/webp" srcset="img/img-preview-31.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-31.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-31.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-31.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-wrap">
-                        <a class="blog-box__gallery-img" data-fslightbox="gallery" href="img/img-view-32.jpg">
+                        <a class="blog-box__gallery-img" data-fancybox="gallery" href="img/img-view-32.jpg">
                             <picture>
+                                <source type="image/avif" srcset="img/img-preview-32.avif">
                                 <source type="image/webp" srcset="img/img-preview-32.webp">
                                 <source type="image/jpeg" srcset="img/img-preview-32.jpg">
-                                <img class="blog-box__gallery-preview" src="img/img-preview-32.jpg" alt="preview">
+                                <img loading="lazy" class="blog-box__gallery-preview" src="img/img-preview-32.jpg"
+                                    alt="preview">
                             </picture>
                         </a>
                     </div>
                     <div class="blog-box__gallery-counter lng-td_box_counter">
-                        Screenshots: 32
+                        Скриншоты: 32
                     </div>
                 </div>
+
                 <div class="blog-box__info-title lng-td_box_skills">
-                    Skills
+                    Навыки
                 </div>
                 <div class="blog-box__skills">
                     <div class="blog-box__skills-item">
@@ -730,7 +735,7 @@
                             </svg>
                         </div>
                         <div class="blog-box__skills-title lng-td_box_software">
-                            Proprietary Software
+                            Проприетарные Программы
                         </div>
                     </div>
                     <div class="blog-box__skills-item">
@@ -760,7 +765,7 @@
                             </svg>
                         </div>
                         <div class="blog-box__skills-title lng-td_box_ideas">
-                            Ideas
+                            Идеи
                         </div>
                     </div>
                     <div class="blog-box__skills-item">
@@ -770,21 +775,16 @@
                             </svg>
                         </div>
                         <div class="blog-box__skills-title lng-td_box_сommunication">
-                            Communication
+                            Коммуникация
                         </div>
                     </div>
                 </div>
-                <div class="blog-box__info-title lng-td_box_github">
-                    GitHub Link
-                </div>
-                <a class="blog-box__link" href="https://github.com/maximlobas" target="_blank">
-                    github.com ->
-                </a>
                 <div class="blog-box__info-title blog-box__info-title--none-mobile lng-td_box_vso">
-                    Example: VSO Window Layout (OS Windows)
+                    Пример: макет окна VSO (ОС Windows)
                 </div>
                 <div class="blog-box__vso">
-                    <a class="blog-box__vso-btn btn lng-td_box_download" href="download/VSO_WIN.zip" download>download</a>
+                    <a class="blog-box__vso-btn btn lng-td_box_download" href="download/VSO_WIN.zip"
+                        download>Скачать</a>
                 </div>
             </div>
         </div>
@@ -797,7 +797,7 @@
         <div class="modal-content">
             <div class="modal-content__inner">
                 <div class="modal-content__title lng-modal">
-                    Offer a job
+                    Написать
                 </div>
                 <div class="modal-content__icon">
                     <svg class="modal-content__icon-sprite">
@@ -835,7 +835,8 @@
         </svg>
     </div>
 </button>
-	<script src="js/libs.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="libs/fancybox/fancybox.umd.js"></script>
 <script src="js/main.min.js"></script>
 
 </body>
